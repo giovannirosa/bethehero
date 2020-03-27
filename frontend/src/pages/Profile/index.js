@@ -24,7 +24,7 @@ const Profile = props => {
       .then(res => {
         setIncidents(res.data);
       });
-  }, []);
+  }, [ongId]);
 
   const handleDeleteIncident = id => {
     api
